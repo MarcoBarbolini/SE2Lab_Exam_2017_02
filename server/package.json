@@ -1,7 +1,7 @@
 {
-  "name": "SE2Lab_Exam_2017_02",
+  "name": "Project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exam",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
