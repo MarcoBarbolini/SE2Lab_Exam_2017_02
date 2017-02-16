@@ -276,4 +276,5 @@ exports.getWarehouse = getWarehouse;
 exports.searchItems = searchItems; 
 exports.sellItem = sellItem; 
 exports.restockItem = restockItem; 
-exports.sales = sales; 
+exports.sales = sales;
+exports.salesItems = salesItems;
