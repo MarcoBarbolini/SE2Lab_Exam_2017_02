@@ -112,6 +112,54 @@ paths:
             type: array
             items:
               $ref: "#/definitions/item"
+
+/restockItem:
+    post:
+      summary: restock an item
+      description: add the item to the warehouse, if the item quantity is higher than 10, it will return an error
+      parameters:
+        - name: ID
+          in: formData
+          description: ID of the item
+          required: true
+          type: string
+        - name: size
+          in: formData
+          description: size of the item
+          required: true
+          type: string
+        - name: type
+          in: formData
+          description: type of the item
+          required: true
+          type: string
+        - name: quantity
+          in: formData
+          description: quantity of the item
+          required: tre
+          type: integer
+        - name: season
+          in: formData
+          description: year of the item
+          required: true
+          type: integer
+        - name: colour
+          in: formData
+          description: colour of the item
+          required: true
+          type: string
+        - name: price
+          in: formData
+          description: price of the item
+          required: true
+          type: integer
+      responses:
+        200:
+          description: item restocked
+          schema: 
+              $ref: "#/definitions/item"
+        400:
+          description: something wrong
           
 definitions:
   item:
