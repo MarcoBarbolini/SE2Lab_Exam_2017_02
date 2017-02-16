@@ -257,6 +257,20 @@ var restockItem = function restockItem(item)
 
 //ADD YOUR CODE BELOW THIS COMMENT, IF IT IS POSSIBLE
 
+var salesItems = function setSalesItems(year, discont)
+{
+    var result = [];
+    for (i=0; i < warehouse.length; i++)
+	{
+		if (parseInt(warehouse[i].season) == parseInt(year))
+		{
+			warehouse[i].price = parseInt(warehouse[i].price) - (parseInt(warehouse[i].price) / 100 * parseInt(discont));
+            result.push(warehouse[i]);
+		}
+    }
+    return result;
+}
+
 //export functions
 exports.getWarehouse = getWarehouse; 
 exports.searchItems = searchItems; 
