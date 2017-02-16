@@ -1,0 +1,19 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "Exam Ing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoBarbolini/SE2Lab_Exam_2017_02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoBarbolini/SE2Lab_Exam_2017_02/issues"
+  },
+  "homepage": "https://github.com/MarcoBarbolini/SE2Lab_Exam_2017_02#readme"
+}
